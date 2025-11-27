@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Arun Kumar Sailla - Full Stack Developer">
+    <title>Arun Kumar Sailla | Full Stack Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <!-- Devicon CDN -->
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <!-- GSAP CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">Arun.Dev</div>
+        <div class="nav-right">
+            <ul class="nav-links">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Dark Mode">
+                <span class="toggle-icon">☀️</span>
+            </button>
+            <a href="Arun Kumar Sailla JFS.pdf" target="_blank" class="btn nav-btn">Resume</a>
+        </div>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu">
+        <ul class="mobile-nav-links">
+            <li><a href="#about" class="mobile-link">About</a></li>
+            <li><a href="#skills" class="mobile-link">Skills</a></li>
+            <li><a href="#experience" class="mobile-link">Experience</a></li>
+            <li><a href="#projects" class="mobile-link">Projects</a></li>
+            <li><a href="#contact" class="mobile-link">Contact</a></li>
+            <li><a href="Arun Kumar Sailla JFS.pdf" target="_blank" class="btn nav-btn mobile-btn">Resume</a></li>
+        </ul>
+    </div>
+
+    <main>
+        <!-- Hero Section with 3D Canvas Animation -->
+        <section id="hero" class="hero-section">
+            <canvas id="hero-canvas"></canvas>
+            <div class="hero-content">
+                <h1 class="hero-title">Arun Kumar Sailla</h1>
+                <p class="hero-subtitle">Full Stack Developer</p>
+                <p class="hero-desc">Designing and Building the Modern Applications.</p>
+            </div>
+        </section>
+
+        <!-- Sticky Scrolling About Section -->
+        <section id="about" class="scroll-section">
+            <div class="sticky-wrapper">
+                <div class="sticky-content">
+                    <div class="about-visual">
+                        <img src="AI Arun.jpg" alt="Arun Kumar Sailla" class="profile-img">
+                    </div>
+                    <div class="about-text-container">
+                        <div class="scroll-text-block" id="text-1">
+                            <h2>About Me</h2>
+                            <p>I am a dedicated Full Stack Developer with a specialized skill set.</p>
+                        </div>
+                        <div class="scroll-text-block" id="text-2">
+                            <h2>Passion</h2>
+                            <p>I build robust web applications with an eye for performance and accuracy.</p>
+                        </div>
+                        <div class="scroll-text-block" id="text-3">
+                            <h2>Adaptability</h2>
+                            <p>Proficient in remote collaboration and committed to achieving organizational goals.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Horizontal Scroll Projects Section -->
+        <section id="projects" class="horizontal-section">
+            <div class="horizontal-wrapper">
+                <div class="horizontal-content">
+                    <div class="project-panel intro-panel">
+                        <h2>Selected Works</h2>
+                        <p>Swipe to explore &rarr;</p>
+                    </div>
+                    <!-- Project 1 -->
+                    <div class="project-panel">
+                        <div class="project-card-apple">
+                            <div class="card-content">
+                                <h3>Ajio-clone</h3>
+                                <p class="tech-stack">Javascript, Express, MongoDB</p>
+                                <p class="card-desc">An exact replica of the original fashion e-commerce website.</p>
+                            </div>
+                            <div class="card-visual gradient-1"></div>
+                        </div>
+                    </div>
+                    <!-- Project 2 -->
+                    <div class="project-panel">
+                        <div class="project-card-apple">
+                            <div class="card-content">
+                                <h3>Infinite Scroll</h3>
+                                <p class="tech-stack">React, API Integration</p>
+                                <p class="card-desc">Seamless image browsing experience with dynamic loading.</p>
+                            </div>
+                            <div class="card-visual gradient-2"></div>
+                        </div>
+                    </div>
+                    <!-- Project 3 -->
+                    <div class="project-panel">
+                        <div class="project-card-apple">
+                            <div class="card-content">
+                                <h3>One Planet</h3>
+                                <p class="tech-stack">HTML, CSS E-commerce</p>
+                                <p class="card-desc">A clean, modern e-commerce interface built from scratch.</p>
+                            </div>
+                            <div class="card-visual gradient-3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section with Categories -->
+        <section id="skills" class="section">
+            <div class="container">
+                <h2 class="section-title">Technical Skills</h2>
+                <p class="section-subtitle">I've worked with a wide range of technologies in web development world.</p>
+
+                <div class="skills-categories">
+                    <!-- AI/ML -->
+                    <div class="skill-category">
+                        <h3>AI/ML</h3>
+                        <div class="skill-list">
+                            <div class="skill-card">
+                                <i class="devicon-numpy-plain colored"></i>
+                                <span>NumPy</span>
+                            </div>
+                            <div class="skill-card">
+                                <i class="devicon-pandas-plain colored"></i>
+                                <span>Pandas</span>
+                            </div>
+                            <div class="skill-card">
+                                <i class="devicon-scikitlearn-plain colored"></i>
+                                <span>Scikit-Learn</span>
+                            </div>
+                            <div class="skill-card">
+                                <i class="devicon-tensorflow-original colored"></i>
+                                <span>TensorFlow</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Frontend -->
+                    <div class="skill-category">
+                        <h3>Frontend</h3>
+                        <div class="skill-list">
+                            <div class="skill-card">
+                                <i class="devicon-javascript-plain colored"></i>
+                                <span>Javascript</span>
+                            </div>
+                            <div class="skill-card">
+                                <i class="devicon-typescript-plain colored"></i>
+                                <span>TypeScript</span>
+                            </div>
+                            <div class="skill-card">
+                                <i class="devicon-react-plain colored"></i>
+                                <span>React.js</span>
+                            </div>
+                            <div class="skill-card">
+                                <i class="devicon-nextjs-plain colored"></i>
+                                <span>Next.js</span>
+                            </div>
+                            <div class="skill-card">
+                                <i class="devicon-tailwindcss-plain colored"></i>
+                                <span>Tailwind CSS</span>
+                            </div>
+                            <div class="skill-card">
+                                <i class="devicon-html5-plain colored"></i>
+                                <span>HTML5</span>
+                            </div>
+                            <div class="skill-card">
+                                <i class="devicon-css3-plain colored"></i>
+                                <span>CSS3</span>
+                            </div>
+                            <div class="skill-card">
+                                <i class="devicon-figma-plain colored"></i>
+                                <span>Figma</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Backend -->
+                    <div class="skill-category">
+                        <h3>Backend</h3>
+                        <div class="skill-list">
+                            <div class="skill-card">
+                                <i class="devicon-nodejs-plain colored"></i>
+                                <span>Node.js</span>
+                            </div>
+                            <div class="skill-card">
+                                <i class="devicon-express-original colored"></i>
+                                <span>Express.js</span>
+                            </div>
+                            <div class="skill-card">
+                                <i class="devicon-API-plain colored"></i>
+                                <span>REST APIs</span>
+                            </div>
+                            <div class="skill-card">
+                                <i class="devicon-mongodb-plain colored"></i>
+                                <span>MongoDB</span>
+                            </div>
+                            <div class="skill-card">
+                                <i class="devicon-mysql-plain colored"></i>
+                                <span>MySQL</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Programming Languages -->
+                    <div class="skill-category">
+                        <h3>Programming Languages</h3>
+                        <div class="skill-list">
+                            <div class="skill-card">
+                                <i class="devicon-java-plain colored"></i>
+                                <span>Java</span>
+                            </div>
+                            <div class="skill-card">
+                                <i class="devicon-python-plain colored"></i>
+                                <span>Python</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Hosting Platform -->
+                    <div class="skill-category">
+                        <h3>Hosting Platform</h3>
+                        <div class="skill-list">
+                            <div class="skill-card">
+                                <i class="devicon-vercel-original colored"></i>
+                                <span>Vercel</span>
+                            </div>
+                            <div class="skill-card">
+                                <i class="devicon-netlify-plain colored"></i>
+                                <span>Netlify</span>
+                            </div>
+                            <div class="skill-card">
+                                <i class="devicon-github-original colored"></i>
+                                <span>Github Pages</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Version Control -->
+                    <div class="skill-category">
+                        <h3>Version Control</h3>
+                        <div class="skill-list">
+                            <div class="skill-card">
+                                <i class="devicon-git-plain colored"></i>
+                                <span>Git</span>
+                            </div>
+                            <div class="skill-card">
+                                <i class="devicon-github-original colored"></i>
+                                <span>Github</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Container Management -->
+                    <div class="skill-category">
+                        <h3>Container Management</h3>
+                        <div class="skill-list">
+                            <div class="skill-card">
+                                <i class="devicon-docker-plain colored"></i>
+                                <span>Docker</span>
+                            </div>
+                            <div class="skill-card">
+                                <i class="devicon-kubernetes-plain colored"></i>
+                                <span>Kubernetes</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CI / CD Pipeline -->
+                    <div class="skill-category">
+                        <h3>CI / CD Pipeline</h3>
+                        <div class="skill-list">
+                            <div class="skill-card">
+                                <i class="devicon-jenkins-line colored"></i>
+                                <span>Jenkins</span>
+                            </div>
+                            <div class="skill-card">
+                                <i class="devicon-github-plain colored"></i>
+                                <span>GitHub Actions</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Other Tools -->
+                    <div class="skill-category">
+                        <h3>Other Tools</h3>
+                        <div class="skill-list">
+                            <div class="skill-card">
+                                <i class="devicon-postman-plain colored"></i>
+                                <span>Postman</span>
+                            </div>
+                            <div class="skill-card">
+                                <i class="devicon-vscode-plain colored"></i>
+                                <span>VS Code</span>
+                            </div>
+                            <div class="skill-card">
+                                <i class="devicon-intellij-plain colored"></i>
+                                <span>IntelliJ IDEA</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="section">
+            <div class="container">
+                <h2 class="section-title">Experience</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <span class="year">2024 - Present</span>
+                        <h3>Capgemini</h3>
+                        <p class="role">Software Development Engineer</p>
+                        <p class="desc">Leading development of catalogue services and scaling infrastructure for
+                            high-traffic retail websites.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="year">2022</span>
+                        <h3>Fraazo</h3>
+                        <p class="role">Software Engineer</p>
+                        <p class="desc">Developed critical internal dashboards for operations and supply chain
+                            management.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="year">2021 - 2022</span>
+                        <h3>Masai School</h3>
+                        <p class="role">Internship</p>
+                        <p class="desc">Intensive training and practical application of full-stack web development
+                            technologies.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact-section">
+            <div class="container center-text">
+                <h2>Let's Connect</h2>
+                <p class="contact-email">arunkumarsailla@gmail.com</p>
+                <p class="contact-phone">+91 8106428106</p>
+                <a href="mailto:arunkumarsailla@gmail.com" class="btn primary-btn">Say Hello</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Arun Kumar Sailla. Designed with Apple-inspired Aesthetics.</p>
+        <p>Made with ❤️ by Arun Kumar Sailla</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
